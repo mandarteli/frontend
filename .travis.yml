@@ -5,5 +5,5 @@ services:
 before_install:
   - docker build -t mandarteli/frontend -f Dockerfile.dev .
 
-scripts:
+script:
   - docker run -e CI=true mandarteli/frontend npm run test
