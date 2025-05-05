@@ -16,6 +16,6 @@ deploy:
   bucket_name: "elasticbeanstalk-us-east-1-441778933962"
   bucket_path: "frontendApp"
   access_key_id: $AWS_ACCESS_KEY
-  secret_access_kay: $AWS_PASS_KEY
+  secret_access_kay: "$AWS_PASS_KEY"
   on:
     branch: main
