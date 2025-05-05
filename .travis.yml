@@ -1,3 +1,5 @@
+dist: focal
+
 sudo: required
 services:
   - docker
@@ -12,7 +14,7 @@ deploy:
   provider: elasticbeanstalk
   region: "us-east-1"
   app: "frontendApp"
-  env: "FrontendApp-env-1"
+  env: "FrontendApp-env"
   bucket_name: "elasticbeanstalk-us-east-1-441778933962"
   bucket_path: "frontendApp"
   access_key_id: $AWS_ACCESS_KEY
